@@ -1,0 +1,175 @@
+/*----------------------------------------*/
+/*  01. Theme default CSS
+/*----------------------------------------*/
+
+/* 1. Theme default css */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700;800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: $karla;
+	font-weight: normal;
+}
+
+.w-img {
+	& img {
+		width: 100%;
+	}
+}
+
+.m-img {
+	& img {
+		max-width: 100%;
+	}
+}
+
+img {
+	max-width: 100%;
+}
+*:focus{
+	outline: inherit;
+}
+a:focus,
+.button:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+a:focus,
+a:hover {
+	text-decoration: none;
+}
+
+a,
+button {
+	outline: none;
+	border: none;
+	text-decoration: none;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+button:focus {
+	outline: 0;
+	border: 0
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0px;
+	font-weight: 700;
+	line-height: 1;
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+li {
+	list-style: none;
+	display: inline-block;
+}
+
+p {
+	font-size: 21px;
+	font-weight: normal;
+	color: $black-2;
+	margin: 0;
+	line-height: 1.5;
+
+}
+
+.btn {
+
+	border: 1px solid #FF414D;
+	padding: 18px 35px;
+	color: white;
+	font-size: 18px;
+	line-height: 1.2;
+	transition: .3s;
+	background-color: #FF414D;
+	font-weight: 700;
+	text-transform: uppercase;
+
+	&:hover {
+		border-color: #FF414D;
+		background-color: transparent;
+		color: #FF414D;
+	}
+}
+
+.btn-red {
+	border-radius: 30px;
+}	
+
+*::-moz-selection {
+	background: $black;
+	color: $white;
+	text-shadow: none;
+}
+
+::-moz-selection {
+	background: $black;
+	color: $white;
+	text-shadow: none;
+}
+
+::selection {
+	background: $black;
+	color: $white;
+	text-shadow: none;
+}
+
+/*--
+    - Input Placeholder
+-----------------------------------------*/
+*::-moz-placeholder {
+	color: $black;
+	font-size: 14px;
+	opacity: 1;
+}
+
+*::placeholder {
+	color: $black;
+	font-size: 14px;
+	opacity: 1;
+}
+
+.color{
+	color: #3E49F3;
+	background-color: rgba(62, 73, 243, 0.15);
+}
+.color1{
+	color: #91CD6D;
+	background-color: rgba(145, 205, 109, 0.15);
+
+}
+.color2{
+	color: #FF4B36;
+	background-color:rgba(255, 75, 54, 0.15);
+
+}
+.color3{
+	color: #161616;
+	background-color: rgba(22, 22, 22, 0.15);
+}
